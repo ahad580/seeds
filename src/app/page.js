@@ -581,7 +581,7 @@ export default function SeedHero() {
           <h2 className="awakenTitle">Awaken Within.</h2>
           <div className="awakenCopy">
             © 2026 BioSprout (
-            <a href="" target="_blank" rel="noopener noreferrer" className="ahadLink">
+            <a href="https://github.com/ahad580" target="_blank" rel="noopener noreferrer" className="ahadLink">
               ahad.io
             </a>
             )
