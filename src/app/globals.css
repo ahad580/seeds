@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 img,
 video {
   max-width: 100%;
@@ -192,6 +193,7 @@ a {
   background: rgba(255, 255, 255, 0.92);
   color: #0f2d16;
 }
+
 .heroCard {
   background: #f3f1ec;
   border-bottom-left-radius: 38px;
@@ -233,7 +235,7 @@ a {
   border: 1px solid rgba(15, 45, 22, 0.35);
   color: #0f2d16;
   padding: 6px 10px;
- _toggle-border-radius: 999px;
+  _toggle-border-radius: 999px;
   border-radius: 999px;
   font-size: 12px;
   font-weight: 700;
@@ -309,6 +311,7 @@ a {
 .productImg {
   object-fit: contain;
 }
+
 .greenBand {
   background: #0f2d16;
   margin-top: -28px;
@@ -675,7 +678,8 @@ a {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
-.duoGrid > * {
+
+.duoGrid>* {
   min-width: 0;
 }
 
@@ -1391,7 +1395,9 @@ a {
   overscroll-behavior-x: contain;
 }
 
-.storiesScroller:active { cursor: grabbing; }
+.storiesScroller:active {
+  cursor: grabbing;
+}
 
 .storiesScroller::-webkit-scrollbar {
   width: 0;
@@ -1491,7 +1497,7 @@ a {
   width: 420px;
   display: flex;
   flex-direction: column;
-  gap: 14px; 
+  gap: 14px;
 }
 
 .storiesStack .storiesCircle {
@@ -1511,6 +1517,7 @@ a {
   background: #f3f1ec;
   border: 1px solid rgba(15, 45, 22, 0.1);
 }
+
 .storiesCombo {
   flex: 0 0 auto;
   display: flex;
@@ -1518,7 +1525,9 @@ a {
   gap: 26px;
 }
 
-.storiesComboLeft { flex: 0 0 auto; }
+.storiesComboLeft {
+  flex: 0 0 auto;
+}
 
 .storiesComboRight {
   flex: 0 0 auto;
@@ -1550,33 +1559,96 @@ a {
 }
 
 @media (max-width: 900px) {
-  .storiesShell { padding: 0 18px; }
-  .storiesHeading { font-size: 28px; }
-  .storiesTrack { gap: 22px; }
+  .storiesShell {
+    padding: 0 18px;
+  }
 
-  .storiesCircle { width: 340px; height: 340px; }
-  .storiesTall { width: 280px; height: 340px; }
-  .storiesQuoteImg, .storiesQuoteDarkImg { width: 360px; height: 340px; }
-  .storiesOvalSm { width: 200px; height: 200px; }
+  .storiesHeading {
+    font-size: 28px;
+  }
 
-  .storiesStack { width: 360px; }
-  .storiesStack .storiesCircle { width: 360px; height: 220px; }
+  .storiesTrack {
+    gap: 22px;
+  }
+
+  .storiesCircle {
+    width: 340px;
+    height: 340px;
+  }
+
+  .storiesTall {
+    width: 280px;
+    height: 340px;
+  }
+
+  .storiesQuoteImg,
+  .storiesQuoteDarkImg {
+    width: 360px;
+    height: 340px;
+  }
+
+  .storiesOvalSm {
+    width: 200px;
+    height: 200px;
+  }
+
+  .storiesStack {
+    width: 360px;
+  }
+
+  .storiesStack .storiesCircle {
+    width: 360px;
+    height: 220px;
+  }
+
   .storiesStack .storiesQuoteImg,
-  .storiesStack .storiesQuoteDarkImg { width: 360px; height: 210px; }
+  .storiesStack .storiesQuoteDarkImg {
+    width: 360px;
+    height: 210px;
+  }
 }
 
 @media (max-width: 560px) {
-  .storiesHeading { font-size: 24px; line-height: 1.08; }
+  .storiesHeading {
+    font-size: 24px;
+    line-height: 1.08;
+  }
 
-  .storiesTall { width: 240px; height: 320px; }
-  .storiesCircle { width: 320px; height: 320px; }
-  .storiesQuoteImg, .storiesQuoteDarkImg { width: 320px; height: 320px; }
-  .storiesOvalSm { width: 180px; height: 180px; }
+  .storiesTall {
+    width: 240px;
+    height: 320px;
+  }
 
-  .storiesStack { width: 320px; }
-  .storiesStack .storiesCircle { width: 320px; height: 210px; }
+  .storiesCircle {
+    width: 320px;
+    height: 320px;
+  }
+
+  .storiesQuoteImg,
+  .storiesQuoteDarkImg {
+    width: 320px;
+    height: 320px;
+  }
+
+  .storiesOvalSm {
+    width: 180px;
+    height: 180px;
+  }
+
+  .storiesStack {
+    width: 320px;
+  }
+
+  .storiesStack .storiesCircle {
+    width: 320px;
+    height: 210px;
+  }
+
   .storiesStack .storiesQuoteImg,
-  .storiesStack .storiesQuoteDarkImg { width: 320px; height: 210px; }
+  .storiesStack .storiesQuoteDarkImg {
+    width: 320px;
+    height: 210px;
+  }
 }
 
 
@@ -1822,4 +1894,33 @@ a {
   .awakenTitle {
     font-size: 52px;
   }
+}
+
+.seedFooterSocial {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.seedFooterSocial:hover {
+  color: #00bbd4ad;
+}
+
+.seedFooterSocial::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background-color: #00bcd4;
+  transition: width 0.3s ease;
+}
+
+.seedFooterSocial:hover::after {
+  width: 100%;
 }

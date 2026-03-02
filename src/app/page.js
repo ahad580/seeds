@@ -578,7 +578,7 @@ export default function SeedHero() {
         </div>
         <div className="awakenOverlay" aria-hidden="true" />
         <div className="awakenContent">
-          <h2 className="awakenTitle">Awaken Within</h2>
+          <h2 className="awakenTitle">Awaken Within.</h2>
           <div className="awakenCopy">© 2026 BioSprout (ahad.io)</div>
         </div>
       </section>
