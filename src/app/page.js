@@ -19,7 +19,7 @@ function HoverVideo({ webm, mp4, poster, className = "" }) {
         const v = ref.current;
         if (!v) return;
         v.currentTime = 0;
-        v.play().catch(() => {});
+        v.play().catch(() => { });
       }}
       onMouseLeave={() => {
         const v = ref.current;
@@ -137,8 +137,8 @@ export default function SeedHero() {
 
   const footerCols = useMemo(
     () => [
-      { title: "PRODUCTS", links: ["Shop All", "Science", "Sustainability", "SeedLabs"] },
-      { title: "ABOUT", links: ["Seed", "Science", "Sustainability", "SeedLabs"] },
+      { title: "PRODUCTS", links: ["Shop All", "Science", "Sustainability", "BioSproutLabs"] },
+      { title: "ABOUT", links: ["BioSprout", "Science", "Sustainability", "BioSproutLabs"] },
       { title: "INQUIRE", links: ["Partner", "Practitioners", "Press", "Join"] },
       { title: "HELP", links: ["Help", "Contact", "My Account", "International"] },
       { title: "SOCIAL", links: ["Instagram", "Twitter", "LinkedIn", "Refer"] },
@@ -156,7 +156,7 @@ export default function SeedHero() {
     dragRef.current.pid = e.pointerId;
     try {
       scroller.setPointerCapture(e.pointerId);
-    } catch {}
+    } catch { }
   };
 
   const onPointerMove = (e) => {
@@ -178,7 +178,7 @@ export default function SeedHero() {
     endDrag();
     try {
       scroller.releasePointerCapture(e.pointerId);
-    } catch {}
+    } catch { }
   };
 
   const renderStoryMedia = (it, idxKey, forceClass = "") => {
@@ -213,10 +213,10 @@ export default function SeedHero() {
       it.type === "circle"
         ? "storiesCircle"
         : it.type === "ovalSm"
-        ? "storiesOvalSm"
-        : it.type === "square"
-        ? "storiesSquare"
-        : "storiesTall";
+          ? "storiesOvalSm"
+          : it.type === "square"
+            ? "storiesSquare"
+            : "storiesTall";
 
     return (
       <div className={`storiesItem ${cls} ${forceClass}`} key={idxKey}>
@@ -246,7 +246,7 @@ export default function SeedHero() {
           <nav className="mainNav">
             <div className="navLeftPill">
               <a className="brand" href="#">
-                Seed <span className="brandDot" />
+                BioSprout <span className="brandDot" />
               </a>
 
               <div className="navLinks">
@@ -472,7 +472,7 @@ export default function SeedHero() {
           <div className="microGrid">
             <div className="microLeft">
               <div className="microTop">
-                <span className="microBrand">Seed</span>
+                <span className="microBrand">BioSprout</span>
                 <span className="microIcon" aria-hidden="true">
                   <BookIcon />
                 </span>
@@ -513,7 +513,7 @@ export default function SeedHero() {
         <div className="labsWrap">
           <div className="labsGrid">
             <div className="labsCard labsPhoto">
-              <Image src="/hand.jpeg" alt="Seed Labs" fill className="labsBg" />
+              <Image src="/hand.jpeg" alt="BioSprout Labs" fill className="labsBg" />
               <div className="labsOverlay" />
               <div className="labsSideMeta">
                 <span className="labsSideLine" />
@@ -522,7 +522,7 @@ export default function SeedHero() {
 
               <div className="labsCenter">
                 <h3 className="labsTitle">
-                  Seed <span className="labsBrackets">[</span>Labs<span className="labsBrackets">]</span>
+                  BioSprout <span className="labsBrackets">[</span>Labs<span className="labsBrackets">]</span>
                 </h3>
                 <p className="labsSub">Because health is not just human.</p>
                 <span className="labsBtn">Read More</span>
@@ -579,7 +579,7 @@ export default function SeedHero() {
         <div className="awakenOverlay" aria-hidden="true" />
         <div className="awakenContent">
           <h2 className="awakenTitle">Awaken Within</h2>
-          <div className="awakenCopy">© 2026 Seed (Seed Health, Inc.)</div>
+          <div className="awakenCopy">© 2026 BioSprout (ahad.io)</div>
         </div>
       </section>
 
@@ -587,7 +587,7 @@ export default function SeedHero() {
         <div className="seedFooterInner">
           <div className="seedFooterLeft">
             <div className="seedFooterBrand">
-              Seed <span className="seedFooterDot" />
+              BioSprout <span className="seedFooterDot" />
             </div>
 
             <div className="seedFooterHeadline">
@@ -595,8 +595,8 @@ export default function SeedHero() {
             </div>
 
             <div className="seedFooterForm">
-              <div className="seedFooterFormLabel">Science with Seed—nerdy reads for your inbox.</div>
-              <div className="seedFooterFormSub">By signing up you consent to receive Seed emails.</div>
+              <div className="seedFooterFormLabel">Science with BioSprout—nerdy reads for your inbox.</div>
+              <div className="seedFooterFormSub">By signing up you consent to receive BioSprout emails.</div>
 
               <div className="seedFooterInputRow">
                 <input className="seedFooterInput" placeholder="Email address" />
@@ -611,6 +611,9 @@ export default function SeedHero() {
                 This product is not intended to diagnose, treat, cure or prevent any disease.
               </div>
             </div>
+            <a className="seedFooterSocial" href="https://github.com/ahad580  ">
+              coded by ahad.io
+            </a>
           </div>
 
           <div className="seedFooterGrid">
