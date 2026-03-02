@@ -1924,3 +1924,15 @@ a {
 .seedFooterSocial:hover::after {
   width: 100%;
 }
+
+.ahadLink {
+  color: #2e7d32;       
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.ahadLink:hover {
+  color: #1b5e20;       
+  text-decoration: underline;
+}
